@@ -1,0 +1,64 @@
+.switch-box {
+	display: flex;
+	flex-direction: column;
+	// .switch-box__input
+	&__input {
+		display: none;
+	}
+
+	// .switch-box__label
+	&__label {
+		position: relative;
+		@include size(70, 25);
+		background-color: #333;
+		border-radius: 2rem;
+		overflow: hidden;
+		transition: 0.5s ease;
+		&::before {
+			content: "";
+			display: block;
+			@include size(25, 25);
+			background-color: #fff;
+			position: absolute;
+			border-radius: 50%;
+			transition: 0.8s ease;
+		}
+	}
+
+	// .switch-box__icon
+	&__icon {
+		@include size(20, 20);
+		position: absolute;
+		transition:
+			left 0.5s ease,
+			right 0.5s ease;
+	}
+
+	// .switch-box__icon--sun
+	&__icon--sun {
+		top: 12%;
+		left: -31%;
+	}
+
+	// .switch-box__icon--moon
+	&__icon--moon {
+		top: 9%;
+		right: 9%;
+	}
+}
+
+.switch-box__input:checked + .switch-box__label {
+	background-color: $bgcolor-red;
+}
+
+.switch-box__input:checked + .switch-box__label::before {
+	transform: translateX(45px);
+}
+
+.switch-box__input:checked + .switch-box__label .switch-box__icon--sun {
+	left: 11%;
+}
+
+.switch-box__input:checked + .switch-box__label .switch-box__icon--moon {
+	right: -24%;
+}

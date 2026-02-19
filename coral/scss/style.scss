@@ -1,0 +1,88 @@
+@use "sass:math";
+
+@import "_fonts.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap");
+
+@import "_reset.scss";
+
+@import "_mixins.scss";
+
+@import "_variables.scss";
+
+@import "_theme.scss";
+
+
+@import "_overlay.scss";
+
+@import "_form.scss";
+
+@import "_button.scss";
+
+@import "_collections.scss";
+
+@import "_brands.scss";
+
+@import "_banner.scss";
+
+@import "_popular.scss";
+
+@import "_products.scss";
+
+@import "_bestsellers.scss";
+
+@import "_menu.scss";
+
+@import "_card.scss";
+
+@import "_followOnInstagram.scss";
+
+@import "_header.scss";
+
+@import "_switch-box.scss";
+
+@import "_footer.scss";
+
+
+
+
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	inline-size: 100%;
+	line-height: 1.5;
+	color: var(--color-black);
+	background-color: var(--bgcolor-white);
+}
+
+.wrapper {
+	min-block-size: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-inline-size: toRem(1350);
+	padding-inline: toRem(15);
+	margin-inline: auto;
+}
+
+.page {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: toRem(70);
+
+	@media (max-width: 767.98px) {
+		gap: toRem(40);
+	}
+}

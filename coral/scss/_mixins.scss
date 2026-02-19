@@ -1,0 +1,139 @@
+//Percent
+@function percent($px, $from: 100) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+
+//REM
+@function toRem($px, $current: 16) {
+	$result: math.div($px, $current) + rem;
+	@return $result;
+}
+
+//EM
+@function toEm($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+// Адаптивна властивість (clamp)
+@mixin adaptiveValue($property, $startSize, $minSize, $keepSize: 0, $widthFrom: $containerWidth, $widthTo: $minWidth) {
+	@if ($startSize==0) {
+		$startSize: 0.000001;
+	}
+
+	@if ($minSize==0) {
+		$minSize: 0.000001;
+	}
+
+	// Для calc();
+	$addSize: math.div($startSize - $minSize, 16);
+
+	@if ($widthFrom ==$containerWidth and $maxWidthContainer ==0) {
+		$widthFrom: $maxWidth;
+	}
+
+	// Брейк-поїнти в EM
+	$widthFromMedia: toEm($widthFrom);
+	$widthToMedia: toEm($widthTo);
+
+	// Формула плаваючого значення
+	// Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+	$yIntersection: -$widthTo * $slope + $minSize;
+
+	@if ($yIntersection==0) {
+		$yIntersection: 0.000001;
+	}
+
+	$flyValue: #{toRem($yIntersection)}" + " #{$slope * 100}vw;
+
+	// Отримання значення властивості
+	$propertyValue: #{"clamp(" toRem($minSize) "," $flyValue "," toRem($startSize) ")"};
+
+	// Якщо негативні значення
+	@if ($minSize > $startSize) {
+		$propertyValue: #{"clamp(" toRem($startSize) "," $flyValue "," toRem($minSize) ")"};
+	}
+
+	// Встановлюємо значення за замовчуванням
+	@if $keepSize !=1 and $keepSize !=3 {
+		@media (min-width: $widthFromMedia) {
+			#{$property}: toRem($startSize);
+		}
+	}
+
+	// Адаптуємо розмір у проміжку між зазначеними ширинами в'юпорту
+	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
+		// Якщо підтримується clamp();
+		@supports (#{$property}: $propertyValue) {
+			#{$property}: $propertyValue;
+		}
+
+		// Якщо не підтримується clamp();
+		@supports not (#{$property}: $propertyValue) {
+			#{$property}: calc(
+				#{toRem($minSize)} + #{$addSize} * (100vw - #{toRem($widthTo)}) /
+					#{math.div($widthFrom, 16) - math.div($widthTo, 16)}
+			);
+		}
+	}
+
+	@if $keepSize !=1 and $keepSize !=2 {
+		@media (max-width: $widthToMedia) {
+			#{$property}: toRem($minSize);
+		}
+	}
+}
+
+//===
+
+@mixin fs($size) {
+	font-size: map-get($font-sizes, $size);
+}
+
+//===
+
+@mixin title($size: "hero", $mobile-size: 40) {
+	@include fs($size);
+	font-weight: 300;
+
+	@media (max-width: toEm(767.98)) {
+		font-size: toRem($mobile-size);
+	}
+}
+
+
+//===
+
+@mixin boxFont($font-family: "Roboto", $font-weight: 500) {
+	font-family: $font-family, sans-serif;
+	font-weight: $font-weight;
+}
+
+//===
+
+@mixin section-title($size: "xxxl", $mobile-size: "xxl") {
+	@include fs($mobile-size);
+
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.25;
+
+	text-transform: capitalize;
+
+
+	@media (min-width: $bp-tablet) {
+		@include fs($size);
+	}
+}
+
+
+//===
+
+@mixin size($w, $h) {
+    inline-size: toRem($w);
+    block-size: toRem($h);
+}
+

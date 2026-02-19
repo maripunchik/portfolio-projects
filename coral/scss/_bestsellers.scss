@@ -1,0 +1,73 @@
+/* .bestsellers */
+
+.bestsellers {
+	// .bestsellers__container
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		row-gap: toRem(35);
+	}
+
+	// .bestsellers__title
+	&__title {
+		@include section-title;
+	}
+
+	&__controls {
+		display: flex;
+		justify-content: flex-end;
+		gap: toRem(12);
+		margin-bottom: toRem(20);
+	}
+
+	&__arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-arrow);
+		position: absolute;
+		top: 50%;
+		width: toRem(40);
+		height: toRem(40);
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 2;
+		transition:
+			color 0.2s,
+			fill-opacity 0.2s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-red);
+				.icon{
+					color: var(--color-red);
+				}
+			}
+		}
+
+		.icon {
+			width: toRem(18);
+			height: toRem(29);
+			flex-shrink: 0;
+			color: rgba(var(--color-dark-rgb), 0.25);
+			transition:
+				color 0.2s,
+				fill-opacity 0.2s;
+		}
+
+		&--prev {
+			left: toRem(15);
+		}
+
+		&--next {
+			right: toRem(19);
+		}
+	}
+
+	// .bestsellers__cards
+	&__cards {
+		overflow: hidden;
+		flex: none;
+		width: 100%;
+	}
+}

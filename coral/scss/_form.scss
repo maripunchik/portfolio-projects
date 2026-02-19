@@ -1,0 +1,75 @@
+.form {
+	display: flex;
+	justify-content: center;
+	gap: toRem(26);
+
+	@media (max-width: $bp-mobile) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.field {
+	flex-grow: 1;
+	padding-block-end: toRem(13);
+	padding-inline-start: toRem(15);
+	inline-size: 100%;
+
+	outline: none;
+	@include boxFont;
+	border-bottom: toRem(2) solid var(--color-black);
+	transition:
+		border-block-end 0.3s,
+		border-bottom 0.3s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--color-red);
+			border-block-end: toRem(2) solid var(--color-red);
+		}
+
+		&:focus {
+			border-bottom: toRem(2) solid var(--color-red);
+		}
+	}
+}
+
+.submit {
+	display: inline-flex;
+	align-items: center;
+	gap: toRem(4);
+	padding: 0 toRem(16) toRem(10);
+
+	border-bottom: toRem(2) solid var(--color-black);
+	color: var(--color-black);
+	text-align: center;
+	line-height: 1.1875;
+	text-transform: uppercase;
+	transition:
+		color 0.3s,
+		border-color 0.3s;
+
+	.icon {
+		@include size(20, 20);
+		color: var(--color-icon-dark);
+		transition: color 0.3s;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--color-red);
+			border-color: var(--color-red);
+			.icon {
+				color: var(--color-red);
+			}
+		}
+	}
+
+	@media (max-width: $bp-desktop) {
+		& {
+			padding: 0 toRem(10) toRem(8);
+		}
+		.icon {
+			@include size(18, 18);
+		}
+	}
+}

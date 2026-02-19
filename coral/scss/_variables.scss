@@ -1,0 +1,52 @@
+// Налаштування адаптивної сітки ==========
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1950;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ===============================
+
+p,
+li,
+a,
+span,
+button,
+label {
+	text-transform: capitalize;
+}
+
+$font-sizes: (
+	"xs": toRem(12),
+	"sm": toRem(14),
+	"md": toRem(16),
+	"lg": toRem(18),
+	"xl": toRem(20),
+	"xxl": toRem(34),
+	"xxxl": toRem(50),
+	"hero": toRem(74)
+);
+
+$color-white: #fff;
+$color-dark: #1e2832;
+$color-black: #000;
+$color-red: #ff6e61;
+
+//bg
+$bgcolor-red: #ff6e61;
+$bgcolor-white: #fff;
+$bgcolor-dark: #4a4848;
+$bgcolor-light: #f3f4f4;
+
+// breakpoints
+$bp-mobile: toEm(479.98); // mobile max
+$bp-tablet: toEm(767.98); // tablet max
+$bp-desktop: toEm(991.98); // desktop min
+$bp-desktop-lg: toEm(1199.98); // large desktop min
+$bp-desktop-xl: toEm(1399.98); // extra large desktop min

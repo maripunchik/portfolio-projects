@@ -1,0 +1,136 @@
+.brand-banner {
+	position: relative;
+	z-index: 2;
+	color: $color-white;
+	background:
+		url("../img/banner/bg.webp") center/cover,
+		hsl(220, 60%, 1%);
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		position: absolute;
+		inset-block-start: toRem(51);
+		inset-inline-end: toRem(-56);
+		max-inline-size: 100%;
+
+		background-image: url("../img/banner/logo-shadow.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+
+		@include size(676, 309);
+
+		aspect-ratio: 732 / 309;
+		opacity: 0.8;
+		pointer-events: none;
+
+		@media (max-width: toEm(634.98)) {
+			display: none;
+		}
+	}
+
+	// .brand-banner__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		padding-block-start: toRem(30);
+		gap: toRem(10) toRem(25);
+
+		@media (min-width: $bp-desktop) {
+			padding-block-start: toRem(100);
+		}
+
+		@media (max-width: $bp-tablet) {
+			flex-direction: column-reverse;
+			gap: toRem(10);
+		}
+	}
+
+	// .brand-banner__image
+	&__image {
+		position: relative;
+		aspect-ratio: 636/663;
+		inline-size: toRem(636);
+
+		@media (max-width: $bp-tablet) {
+			aspect-ratio: 350/363;
+			inline-size: 100%;
+			align-self: center;
+		}
+	}
+
+	// .brand-banner__img
+	&__img {
+		block-size: 100%;
+		inline-size: 100%;
+		object-fit: contain;
+	}
+
+	// .brand-banner__content
+	&__content {
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		display: flex;
+		flex-basis: clamp(toRem(280), 40vw, toRem(504));
+		flex-direction: column;
+		align-items: flex-start;
+		gap: toRem(30) toRem(10);
+		padding-block-end: toRem(53);
+
+		@media (min-width: $bp-desktop) {
+			gap: toRem(55) toRem(10);
+			padding-bottom: toRem(93);
+		}
+
+		@media (max-width: $bp-tablet) {
+			padding-bottom: toRem(10);
+		}
+	}
+
+	// .brand-banner__title
+	&__title {
+		inline-size: 100%;
+		cursor: pointer;
+
+		img {
+			@include size(151, 71);
+			object-fit: contain;
+
+			@media (min-width: $bp-desktop) {
+				@include size(191, 81);
+			}
+		}
+	}
+
+	// .brand-banner__text
+	&__text {
+		font-size: toRem(26);
+		line-height: 1.54; /* 40/26 */
+
+		@media (max-width: $bp-desktop) {
+			font-size: toRem(20);
+		}
+	}
+
+	// .brand-banner__button
+	&__button {
+		color: var(--color-button-text-dark);
+		background-color: var(--color-white);
+		transition:
+			background-color 0.3s,
+			color 0.3s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--bgcolor-red);
+				color: #f3f4f4;
+				.icon {
+					color: var(--color-white);
+				}
+			}
+		}
+	}
+}

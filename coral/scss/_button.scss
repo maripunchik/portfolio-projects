@@ -1,0 +1,47 @@
+.button {
+	font-size: toRem(29);
+	padding: toRem(19) toRem(26);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: toRem(8);
+	color: var(--color-dark);
+
+	text-transform: capitalize;
+	max-inline-size: toRem(275);
+	block-size: toRem(72);
+
+	background-color: var(--bgcolor-white);
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+
+	@media (max-width: $bp-desktop) {
+		max-inline-size: 100%;
+
+		padding: toRem(10) toRem(16);
+		font-size: toRem(20);
+		block-size: toRem(52);
+	}
+
+	@media (max-width: $bp-mobile) {
+		max-inline-size: none;
+		inline-size: 100%;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--bgcolor-red);
+			color: #f3f4f4;
+		}
+	}
+
+	.icon {
+		@include size(24, 24);
+		object-fit: contain;
+		@media (max-width: $bp-tablet) {
+			@include size(20, 20);
+		}
+	}
+}

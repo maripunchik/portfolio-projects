@@ -1,0 +1,25 @@
+/* .products */
+
+.products {
+	// .products__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: toRem(35);
+	}
+
+	// .products__title
+	&__title {
+		@include section-title;
+	}
+
+	// .products__cards
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(toRem(290), 1fr));
+		gap: toRem(24);
+	}
+}
+
+
+

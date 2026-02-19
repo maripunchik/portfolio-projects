@@ -1,0 +1,118 @@
+/* .follow-on-instagram  */
+
+.follow-on-instagram {
+	background-color: var(--bgcolor-light);
+	// .follow-on-instagram__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(30) toRem(10);
+		padding-block: toRem(50);
+
+		@media (min-width: $bp-tablet) {
+			padding-block: toRem(100);
+			gap: toRem(70) toRem(10);
+		}
+	}
+
+	// .follow-on-instagram__top
+	&__top {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(60);
+	}
+
+	// .follow-on-instagram__title
+	&__title {
+		@include section-title;
+		max-inline-size: toRem(707);
+		width: 100%;
+
+		margin-inline: auto;
+	}
+
+	// .follow-on-instagram__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: toRem(24);
+
+		@media (max-width: $bp-mobile) {
+			justify-content: flex-start;
+		}
+	}
+
+	// .follow-on-instagram__item
+	&__item {
+		flex: 0 1 toRem(200);
+
+		@media (max-width: $bp-mobile) {
+			flex-basis: 100%;
+		}
+	}
+
+	// .follow-on-instagram__link
+	&__link {
+		display: block;
+		position: relative;
+		overflow: hidden;
+
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			inline-size: 100%;
+			block-size: 100%;
+			background:
+				url("../img/follow/icon-shadow.svg") center/toRem(48) toRem(48) no-repeat,
+				rgba(0, 0, 0, 0.5);
+			transform: scale(0);
+			transform-origin: center;
+			will-change: transform;
+
+			opacity: 0;
+			transition:
+				transform 0.3s,
+				opacity 0.3s;
+		}
+
+		@media (max-width: $bp-mobile) {
+			&::before {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+
+	@media (any-hover: hover) {
+		&__item:hover &__link::before {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	// .follow-on-instagram__img
+	&__img {
+		aspect-ratio: 200/200;
+		inline-size: 100%;
+		block-size: 100%;
+		object-fit: cover;
+	}
+
+	// .follow-on-instagram__bottom
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(74);
+		max-inline-size: toRem(784);
+		width: 100%;
+		align-self: center;
+	}
+
+	// .follow-on-instagram__field
+	&__field {
+		max-inline-size: toRem(643);
+		width: 100%;
+	}
+}

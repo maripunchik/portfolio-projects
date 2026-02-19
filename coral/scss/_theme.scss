@@ -1,0 +1,71 @@
+:root {
+	/* text colors */
+	--color-white: #fff;
+	--color-dark: #1e2832;
+	--color-black: #000;
+	--color-red: #ff6e61;
+	--color-button-text: #e3e3e3;
+	--color-button-text-dark: #1e2832;
+	--color-button-text-white: #fff;
+
+	--color-icon: #fff;
+	--color-icon-dark: #1e2832;
+
+	--color-arrow: rgba(30, 40, 50, 0.25);
+
+	--color-icon-footer: #fff;
+
+	/* backgrounds */
+	--bgcolor-red: #ff6e61;
+	--bgcolor-white: #fff;
+	--bgcolor-dark: #4a4848;
+	--bgcolor-light: #f3f4f4;
+	--bgcolor-black-label: #202831;
+	--bgcolor-footer: #1e2832;
+
+	--border-collections-color: rgba(0, 0, 0, 0.25);
+
+	--header-search-bg: rgba(255, 255, 255, 0.9);
+	--header-search-border: rgba(0, 0, 0, 0.15);
+	--header-nav-border: #e5e5e5;
+
+	--menu-shadow: -4px 0 12px rgba(0, 0, 0, 0.25);
+
+	--header-search-shadow:
+		0 24px 48px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+	--color-white: #fff;
+	--color-dark: #fff;
+	--color-black: #fff;
+	--color-red: #ff6e61;
+	--color-button-text: #1e2832;
+	--color-icon: #1e2832;
+	--color-icon-dark: #fff;
+
+	--color-button-text-dark: #1e2832;
+	--color-button-text-white: #1e2832;
+
+	--color-arrow: rgba(30, 40, 50, 0.25);
+
+	--color-icon-footer: #fff;
+
+	--bgcolor-red: #ff6e61;
+	--bgcolor-white: #1e1e1e;
+	--bgcolor-dark: #000;
+	--bgcolor-light: #2a2a2a;
+	--bgcolor-black-label: #0f1418;
+	--bgcolor-footer: #000;
+
+	--border-collections-color: rgba(255, 255, 255, 0.25);
+
+	--header-search-bg: rgba(0, 0, 0, 0.6);
+	--header-search-border: rgba(255, 255, 255, 0.15);
+	--header-nav-border: rgba(255, 255, 255, 0.15);
+
+	--menu-shadow: -4px 0 12px rgba(255, 255, 255, 0.15);
+
+	--header-search-shadow:
+		0 24px 48px rgba(255, 255, 255, 0.12), 0 8px 24px rgba(255, 255, 255, 0.08), 0 2px 8px rgba(255, 255, 255, 0.05);
+}

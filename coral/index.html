@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="zxx" class="light">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=2">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=2">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=2">
+	<link rel="manifest" href="favicon/site.webmanifest?v=2">
+
+	<!-- ===================== -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- =================== -->
+	<title>Coral</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__top-search" data-da=".header__top-choice, 767.98, last">
+						<button type="submit" class="header__top-activation-button">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-search"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="header__logo logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img logo__img--default" src="img/coral/logo.svg" alt="Coral Shop logo">
+							<img class="logo__img logo__img--color" src="img/coral/logo-white.svg"
+								alt="Coral Shop logo alternative">
+						</a>
+					</div>
+					<!-- switch-box -->
+					<div class="header__switch-box switch-box" data-da=".nav-header__list, 767.98, last">
+						<input type="checkbox" class="switch-box__input" id="switch">
+						<label for="switch" class="switch-box__label">
+							<img src="img/sun-solid.svg" class="switch-box__icon switch-box__icon--sun" alt="icon-sun">
+							<img src="img/moon-solid.svg" class="switch-box__icon  switch-box__icon--moon" alt="icon-moon">
+						</label>
+					</div>
+					<div class="header__top-choice">
+						<a href="#" class="header__top-choice-link">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-account"></use>
+							</svg>
+							<span>Account</span>
+						</a>
+						<a href="#" class="header__top-choice-link">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-cart"></use>
+							</svg>
+							<span>Shopping</span>
+						</a>
+					</div>
+					<button type="button" class="header__top-icon">
+						<span></span>
+					</button>
+				</div>
+				<nav class="header__nav nav-header">
+					<ul class="nav-header__list">
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Jewelry & Accessories</a>
+						</li>
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Clothing & Shoes</a>
+						</li>
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Home & Living</a>
+						</li>
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Wedding & Party</a>
+						</li>
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Toys & Entertainment</a>
+						</li>
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Art & Collectibles</a>
+						</li>
+						<li class="nav-header__item">
+							<a class="nav-header__link" href="#">Craft Supplies & Tools</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Search -->
+			<form class="header__search search-header">
+				<div class="search-header__container">
+					<input type="search" name="search" placeholder="Search for products..."
+						class="search-header__field field" required>
+					<button type="submit" class="search-header__submit submit">
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#icon-submit"></use>
+						</svg>
+						" Search "
+					</button>
+				</div>
+
+			</form>
+
+		</header>
+
+		<div class="overlay" data-overlay></div>
+		<!-- main -->
+		<main class="page">
+			<!-- collections -->
+			<section class="collections" id="collections">
+				<div class="collections__container">
+					<div class="collections__content">
+						<h1 class="collections__title">Collections</h1>
+						<div class="collections__text">
+							<p>
+								You can explore and shop many different collections<br>from various brands here.
+							</p>
+						</div>
+						<button type="button" class="collections__button button">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-cart"></use>
+							</svg>
+							shop now
+						</button>
+					</div>
+					<div class="collections__image-item">
+						<div class="collections__image">
+							<img src="img/coral/coral-woman.webp" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- brands -->
+			<div class="page__brands brands">
+				<div class="brands__container">
+					<div class="brands__marquee-moving-line">
+						<ul class="brands__list">
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-1.webp" alt="Graphic Studio">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-2.webp" alt="SALVA">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-3.webp" alt="Golden Studio">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-4.webp" alt="Furniture Design">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-5.webp" alt="Travel Lookbook">
+							</li>
+						</ul>
+						<ul class="brands__list brands__list--display-none">
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-1.webp" alt="Graphic Studio">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-2.webp" alt="SALVA">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-3.webp" alt="Golden Studio">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-4.webp" alt="Furniture Design">
+							</li>
+							<li class="brands__item">
+								<img class="brands__img" src="img/section-2/brand-5.webp" alt="Travel Lookbook">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- popular -->
+			<section class="popular">
+				<div class="popular__container">
+					<div class="popular__title-box">
+						<h2 class="popular__title">
+							Explore new and popular styles
+						</h2>
+					</div>
+					<ul class="popular__cards">
+						<li class="popular__card">
+							<a href="#" class="popular__link">
+								<img src="img/section-2/card-1.webp" alt="Image" class="popular__image">
+								<ol class="popular__labels">
+									<li class="popular__label popular__label--bg--primary">
+										hot
+									</li>
+									<li class="popular__label popular__label--bg--black">
+										sale
+									</li>
+								</ol>
+								<div class="popular__bottom">
+									<h3 class="popular__sub-title">manto</h3>
+									<div class="popular__number">
+										86 product
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="popular__card">
+							<a href="#" class="popular__link">
+								<img src="img/section-2/card-2.webp" alt="Image" class="popular__image">
+								<ol class="popular__labels">
+									<li class="popular__label popular__label--bg--primary">
+										hot
+									</li>
+									<li class="popular__label popular__label--bg--black">
+										sale
+									</li>
+								</ol>
+								<div class="popular__bottom">
+									<h3 class="popular__sub-title">Pants</h3>
+									<div class="popular__number">
+										200 product
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="popular__card">
+							<a href="#" class="popular__link">
+								<img src="img/section-2/card-3.webp" alt="Image" class="popular__image">
+								<ol class="popular__labels">
+									<li class="popular__label popular__label--bg--primary">
+										hot
+									</li>
+									<li class="popular__label popular__label--bg--black">
+										sale
+									</li>
+								</ol>
+								<div class="popular__bottom">
+									<h3 class="popular__sub-title">coat</h3>
+									<div class="popular__number">
+										520 product
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="popular__card">
+							<a href="#" class="popular__link">
+								<img src="img/section-2/card-4.webp" alt="Image" class="popular__image">
+								<ol class="popular__labels">
+									<li class="popular__label popular__label--bg--primary">
+										hot
+									</li>
+									<li class="popular__label popular__label--bg--black">
+										sale
+									</li>
+								</ol>
+								<div class="popular__bottom">
+									<h3 class="popular__sub-title">Shirt</h3>
+									<div class="popular__number">
+										320 product
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="popular__card">
+							<a href="#" class="popular__link">
+								<img src="img/section-2/card-5.webp" alt="Image" class="popular__image">
+								<ol class="popular__labels">
+									<li class="popular__label popular__label--bg--primary">
+										hot
+									</li>
+									<li class="popular__label popular__label--bg--black">
+										sale
+									</li>
+								</ol>
+								<div class="popular__bottom">
+									<h3 class="popular__sub-title">jacket</h3>
+									<div class="popular__number">
+										103 product
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- products -->
+			<section class="products">
+				<div class="products__container">
+					<h2 class="products__title">
+						Or subscribe to the newsletter
+					</h2>
+					<div class="products__menu menu">
+						<ul class="menu__nav-list">
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice">all products</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice">t-shirt</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice">hoodies</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice">jacket</button>
+							</li>
+						</ul>
+						<button type="button" class="menu__button">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-filter"></use>
+							</svg>
+							filter
+						</button>
+					</div>
+					<div class="products__cards">
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--primary">
+										hot
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__1.webp" alt="Adicolor Classics Joggers">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Adicolor Classics Joggers</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">Dress</a>
+									<div class="info-card__price">
+										<p class="info-card__current-price">$63.85</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--primary">
+										hot
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__2.webp" alt="Nike Sportswear Futura Luxe">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Nike Sportswear Futura Luxe</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">Bag</a>
+									<div class="info-card__price">
+										<p class="info-card__current-price">$130.00</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__3.webp" alt="Geometric print Scarf">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Geometric print Scarf</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">scarf</a>
+									<div class="info-card__price">
+										<p class="info-card__current-price">$53.00</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--black">
+										sale
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__4.webp" alt="Yellow Reserved Hoodie">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Yellow Reserved Hoodie</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">Hoodie</a>
+									<div class="info-card__price">
+										<p class="info-card__old-price">
+											<span>$364.00</span>
+										</p>
+										<p class="info-card__new-price">
+											<span>$155.00</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--primary">
+										hot
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__5.webp" alt="Basic Dress Green">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Basic Dress Green</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">dress</a>
+									<div class="info-card__price">
+										<p class="info-card__current-price">$236.00</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--black">
+										sale
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__6.webp" alt="Nike Air Zoom Pegasus">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Nike Air Zoom Pegasus</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">shoe</a>
+									<div class="info-card__price">
+										<p class="info-card__old-price">
+											<span>$220.00</span>
+										</p>
+										<p class="info-card__new-price">
+											<span>$198.00</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--primary">
+										hot
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__7.webp" alt="Nike Repel Miler">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Nike Repel Miler</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">tracksuit</a>
+									<div class="info-card__price">
+										<p class="info-card__current-price">$120.50</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="products__card card">
+							<div class="card__body">
+								<ul class="card__labels">
+									<li class="card__label card__label--bg--black">
+										sale
+									</li>
+								</ul>
+								<a href="#" class="card__link">
+									<img class="card__image" src="img/products/card__8.webp" alt="Nike Sportswear Futura Luxe">
+								</a>
+								<div class="card__choice choice-card">
+									<ol class="choice-card__list">
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--favor">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-favour"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="choice-card__item">
+											<a href="#" class="choice-card__link choice-card__link--search">
+												<svg class="icon">
+													<use xlink:href="img/sprite.svg#icon-search1"></use>
+												</svg>
+											</a>
+										</li>
+									</ol>
+									<button type="button" class="choice-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+										shop now
+									</button>
+								</div>
+							</div>
+							<div class="card__info info-card">
+								<h3 class="info-card__title">
+									<a href="#" class="info-card__link">Nike Sportswear Futura Luxe</a>
+								</h3>
+								<div class="info-card__details">
+									<a href="#" class="info-card__type">Glasses</a>
+									<div class="info-card__price">
+										<p class="info-card__current-price">$160.00</p>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- brand-banner -->
+			<section class="brand-banner">
+				<div class="brand-banner__container">
+					<div class="brand-banner__image">
+						<img class="brand-banner__img" src="img/banner/webp-removebg-preview.png" alt="Image">
+					</div>
+					<div class="brand-banner__content">
+						<h2 class="brand-banner__title">
+							<img src="img/banner/zara-logo-2.svg" alt="логотип ZARA">
+						</h2>
+						<div class="brand-banner__text">
+							<p>Lustrous yet understated. The new evening
+								wear collection exclusively offered at the
+								reopened Giorgio Armani boutique in Los
+								Angeles.
+							</p>
+						</div>
+						<button type="button" class="brand-banner__button button">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-cart"></use>
+							</svg>
+							see collection
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- bestsellers -->
+			<section class="bestsellers">
+				<div class="bestsellers__container">
+					<h2 class="bestsellers__title">
+						Best sellers
+					</h2>
+					<div class="bestsellers__menu menu">
+						<ul class="menu__nav-list">
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice" data-filter="all">all products</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice" data-filter="bags">bags</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice" data-filter="hoodies">hoodies</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice" data-filter="jacket">jacket</button>
+							</li>
+							<li class="menu__nav-item">
+								<button type="button" class="menu__button-choice" data-filter="dresses">dresses</button>
+							</li>
+						</ul>
+						<button type="button" class="menu__button">
+							show all
+						</button>
+					</div>
+
+					<div class="bestsellers__cards swiper">
+						<div class="swiper-wrapper">
+							<article class="bestsellers__card card swiper-slide">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--primary">
+											hot
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__1.webp" alt="Adicolor Classics Joggers">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Adicolor Classics Joggers</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">Dress</a>
+										<div class="info-card__price">
+											<p class="info-card__current-price">$63.85</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide" data-category="bags">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--primary">
+											hot
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__2.webp"
+											alt="Nike Sportswear Futura Luxe">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Nike Sportswear Futura Luxe</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">Bag</a>
+										<div class="info-card__price">
+											<p class="info-card__current-price">$130.00</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide" data-category="jacket">
+								<div class="card__body">
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__3.webp" alt="Geometric print Scarf">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Geometric print Scarf</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">scarf</a>
+										<div class="info-card__price">
+											<p class="info-card__current-price">$53.00</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide" data-category="hoodies">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--black">
+											sale
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__4.webp" alt="Yellow Reserved Hoodie">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Yellow Reserved Hoodie</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">Hoodie</a>
+										<div class="info-card__price">
+											<p class="info-card__old-price">
+												<span>$364.00</span>
+											</p>
+											<p class="info-card__new-price">
+												<span>$155.00</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide" data-category="dresses">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--primary">
+											hot
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__5.webp" alt="Basic Dress Green">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Basic Dress Green</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">dress</a>
+										<div class="info-card__price">
+											<p class="info-card__current-price">$236.00</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--black">
+											sale
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__6.webp" alt="Nike Air Zoom Pegasus">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Nike Air Zoom Pegasus</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">shoe</a>
+										<div class="info-card__price">
+											<p class="info-card__old-price">
+												<span>$220.00</span>
+											</p>
+											<p class="info-card__new-price">
+												<span>$198.00</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--primary">
+											hot
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__7.webp" alt="Nike Repel Miler">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Nike Repel Miler</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">tracksuit</a>
+										<div class="info-card__price">
+											<p class="info-card__current-price">$120.50</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="bestsellers__card card swiper-slide">
+								<div class="card__body">
+									<ul class="card__labels">
+										<li class="card__label card__label--bg--black">
+											sale
+										</li>
+									</ul>
+									<a href="#" class="card__link">
+										<img class="card__image" src="img/products/card__8.webp"
+											alt="Nike Sportswear Futura Luxe">
+									</a>
+									<div class="card__choice choice-card">
+										<ol class="choice-card__list">
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--favor">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-favour"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="choice-card__item">
+												<a href="#" class="choice-card__link choice-card__link--search">
+													<svg class="icon">
+														<use xlink:href="img/sprite.svg#icon-search1"></use>
+													</svg>
+												</a>
+											</li>
+										</ol>
+										<button type="button" class="choice-card__button">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											shop now
+										</button>
+									</div>
+								</div>
+								<div class="card__info info-card">
+									<h3 class="info-card__title">
+										<a href="#" class="info-card__link">Nike Sportswear Futura Luxe</a>
+									</h3>
+									<div class="info-card__details">
+										<a href="#" class="info-card__type">Glasses</a>
+										<div class="info-card__price">
+											<p class="info-card__current-price">$160.00</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="bestsellers__controls">
+						<button class="bestsellers__arrow bestsellers__arrow--prev">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-left"></use>
+							</svg>
+						</button>
+
+						<button class="bestsellers__arrow bestsellers__arrow--next">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#icon-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- follow-on-instagram -->
+			<section class="follow-on-instagram">
+				<div class="follow-on-instagram__container">
+					<div class="follow-on-instagram__top">
+						<h2 class="follow-on-instagram__title">
+							Follow products and discounts on Instagram
+						</h2>
+						<ul class="follow-on-instagram__list">
+							<li class="follow-on-instagram__item">
+								<a class="follow-on-instagram__link" href="#" target="_blank">
+									<img src="img/follow/card_1.webp" alt="молода жінка у модному вбранні"
+										class="follow-on-instagram__img">
+								</a>
+							</li>
+							<li class="follow-on-instagram__item">
+								<a class="follow-on-instagram__link" href="#" target="_blank">
+									<img src="img/follow/card_2.webp" alt="стильний клатч на моделі на фоні пляжу"
+										class="follow-on-instagram__img">
+								</a>
+							</li>
+							<li class="follow-on-instagram__item">
+								<a class="follow-on-instagram__link" href="#" target="_blank">
+									<img src="img/follow/card_3.webp" alt="стильний годинник на руці"
+										class="follow-on-instagram__img">
+								</a>
+							</li>
+							<li class="follow-on-instagram__item">
+								<a class="follow-on-instagram__link" href="#" target="_blank">
+									<img src="img/follow/card_4.webp" alt="модель у стильному вбранні"
+										class="follow-on-instagram__img">
+								</a>
+							</li>
+							<li class="follow-on-instagram__item">
+								<a class="follow-on-instagram__link" href="#" target="_blank">
+									<img src="img/follow/card_5.webp" alt="модель у стильній сукні з сумкою в руках на пляжі"
+										class="follow-on-instagram__img">
+								</a>
+							</li>
+							<li class="follow-on-instagram__item">
+								<a class="follow-on-instagram__link" href="#" target="_blank">
+									<img src="img/follow/card_6.webp" alt="стильний годинник на руці"
+										class="follow-on-instagram__img">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="follow-on-instagram__bottom">
+						<h2 class="follow-on-instagram__title">
+							Or subscribe to the newsletter
+						</h2>
+						<form class="follow-on-instagram__form form" action="#" method="POST">
+							<input class="follow-on-instagram__field field" type="email" name="email"
+								placeholder="Email address..." required>
+							<button class="follow-on-instagram__submit submit">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#icon-submit"></use>
+								</svg>
+								SUBMIT
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="top-footer__container">
+					<div class="top-footer__main">
+						<div class="top-footer__logo logo">
+							<a href="#" class="logo__link">
+								<img class="logo__img logo__img--default" src="img/coral/logo.svg" alt="Coral Shop logo">
+								<img class="logo__img logo__img--color" src="img/coral/logo-white.svg"
+									alt="Coral Shop logo alternative">
+							</a>
+						</div>
+						<div class="top-footer__text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua
+							</p>
+						</div>
+						<address class="top-footer__social social">
+							<ul class="social__list">
+								<li class="social__item">
+									<a target="_blank" href="#" class="social__link social__link--facebook">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" href="#" class="social__link social__link--twitter">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-tw"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" href="#" class="social__link social__link--linkedin">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-li"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" href="#" class="social__link social__link--instagram">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#icon-inst"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<div class="top-footer__menu-nav menu-nav">
+						<div class="menu-nav__navigation">
+							<h4 class="menu-nav__title">
+								CATALOG
+							</h4>
+							<ul class="menu-nav__list">
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Necklaces
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										hoodies
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Jewelry Box
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										t-shirt
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										jacket
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav__info">
+							<h4 class="menu-nav__title">
+								ABOUT US
+							</h4>
+							<ul class="menu-nav__list">
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Our Producers
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Sitemap
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										FAQ
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										About Us
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Terms & Conditions
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-nav__services">
+							<h4 class="menu-nav__title">
+								CUSTOMER SERVICES
+							</h4>
+							<ul class="menu-nav__list">
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Contact Us
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Track Your Order
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Product Care & Repair
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Book an Appointment
+									</a>
+								</li>
+								<li class="menu-nav__item">
+									<a target="_blank" href="#" class="menu-nav__link">
+										Shipping & Returns
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__copyright copyright">
+						<span>© 2022 Coral , Inc.</span>
+					</div>
+					<ul class="bottom-footer__payment-list">
+						<li class="bottom-footer__payment-item">
+							<a href="#" target="_blank">
+								<img src="img/footer/icons_payment.webp" alt="credit cards">
+							</a>
+						</li>
+					</ul>
+					<a class="bottom-footer__link" href="#header">
+						<span>Scroll to top</span>
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#icon-up"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script src="js/dynamic_adapt.js"></script>
+	<script type="module" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+// header
+.header {
+	background-color: var(--bgcolor-light);
+
+	// .header__container
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding-block-start: toRem(31);
+		padding-block-end: toRem(20);
+		z-index: 110;
+
+		@media (max-width: $bp-mobile) {
+			padding-block-start: toRem(15);
+		}
+	}
+
+	// .header__top
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(15);
+		padding-block-end: toRem(25);
+		z-index: 5;
+
+		@media (max-width: $bp-tablet) {
+			gap: toRem(10);
+			padding-block-end: 0;
+		}
+	}
+
+	// .header__top-activation-button
+	&__top-activation-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-dark);
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-red);
+				.icon {
+					color: var(--color-red);
+				}
+			}
+		}
+
+		.icon {
+			@include size(20, 20);
+			color: var(--color-icon-dark);
+			transition: color 0.3s;
+		}
+	}
+
+	// .header__top-choice
+	&__top-choice {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: toRem(10);
+
+		@media (min-width: toEm(599.98)) {
+			gap: toRem(22);
+		}
+	}
+
+	// .header__top-choice-link
+	&__top-choice-link {
+		display: flex;
+		align-items: center;
+		gap: toRem(8);
+		color: var(--color-dark);
+		@include fs(lg);
+		@include boxFont($font-family: "Roboto", $font-weight: 400);
+		transition: color 0.3s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-red);
+				.icon {
+					color: var(--color-red);
+				}
+			}
+		}
+		@media (max-width: toEm(720.98)) {
+			span {
+				display: none;
+			}
+		}
+		.icon {
+			@include size(20, 20);
+			color: var(--color-icon-dark);
+			transition: color 0.3s;
+		}
+	}
+
+	// .header__top-icon
+	&__top-icon {
+		display: none;
+		@media (max-width: $bp-tablet) {
+			& {
+				display: block;
+				position: relative;
+				block-size: toRem(20);
+				inline-size: toRem(30);
+				flex-shrink: 0;
+				z-index: 200;
+			}
+
+			&::before,
+			&::after,
+			& span {
+				content: "";
+				block-size: toRem(3);
+				inline-size: 100%;
+				border-radius: toRem(8);
+				position: absolute;
+				left: 0;
+				transition: background-color 0.3s;
+				background-color: var(--bgcolor-dark);
+			}
+
+			&::before {
+				top: 0;
+			}
+
+			&::after {
+				bottom: 0;
+			}
+
+			& span {
+				top: 50%;
+				transform: translate(0px, -50%);
+			}
+
+			.menu-open &::before {
+				transform: rotate(-45deg);
+				top: 50%;
+				margin-block-start: toRem(-1);
+				background-color: var(--bgcolor-red);
+			}
+
+			.menu-open &::after {
+				transform: rotate(45deg);
+				bottom: 50%;
+				margin-block-end: toRem(-1);
+				background-color: var(--bgcolor-red);
+			}
+
+			.menu-open & span {
+				transform: scale(0);
+			}
+		}
+	}
+
+	// .header__search
+	&__search {
+		position: absolute;
+		z-index: 110;
+		inset-block-start: toRem(155);
+		inset-inline: 0;
+		padding-block: toRem(12);
+
+		transform: translateY(-100%);
+		opacity: 0;
+		visibility: hidden;
+
+		transition:
+			transform 0.4s,
+			opacity 0.4s,
+			visibility 0.4s;
+
+		background-color: var(--header-search-bg);
+		backdrop-filter: blur(toRem(6));
+		box-shadow: var(--header-search-shadow);
+
+		border: toRem(1) solid var(--header-search-border);
+
+		&--active {
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		@media (max-width: $bp-tablet) {
+			inset-block-start: toRem(65);
+		}
+
+		@media (max-width: $bp-mobile) {
+			inset-block-start: toRem(48);
+		}
+	}
+
+	&__nav {
+		border-block-start: toRem(1) solid var(--header-nav-border);
+	}
+}
+
+.nav-header {
+	// .nav-header__list
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		row-gap: toRem(15);
+		color: var(--color-dark);
+		inline-size: 100%;
+		block-size: 100%;
+		z-index: 1;
+		overflow: auto;
+		padding-block-start: toRem(30);
+		transition: all 0.5s;
+
+		@media (max-width: toEm(1342.98)) {
+			padding-block-start: toRem(10);
+			gap: toRem(10) toRem(30);
+			justify-content: center;
+		}
+
+		@media (max-width: $bp-tablet) {
+			position: fixed;
+			top: 0;
+			right: 0;
+			flex-direction: column;
+			align-items: center;
+			column-gap: toRem(25);
+			inline-size: 60%;
+			block-size: 100vh;
+			background-color: var(--bgcolor-light);
+			padding: toRem(30);
+
+			transform: translateX(100%);
+
+			transition: transform 0.3s;
+
+			@media (max-width: toEm(720.98)) {
+				inline-size: 50%;
+			}
+			@media (max-width: $bp-mobile) {
+				inline-size: 100%;
+			}
+			.menu-open & {
+				transform: translateX(0);
+				box-shadow: var(--menu-shadow);
+			}
+		}
+	}
+
+	// .nav-header__item
+	&__item {
+	}
+
+	// .nav-header__link
+	&__link {
+		font-size: toRem(20);
+		transition: color 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-red);
+			}
+		}
+		@media (min-width: toEm(720.98)) {
+			font-size: toRem(16);
+		}
+
+		@media (max-width: toEm(530.98)) {
+			font-size: toRem(16);
+		}
+	}
+}
+
+.search-header {
+	// .search-header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: toRem(12);
+		inline-size: 100%;
+	}
+
+	// .search-header__field
+	&__field {
+		display: flex;
+		flex: 1;
+		inline-size: 100%;
+		padding: 0 toRem(10) toRem(9);
+
+		@media (max-width: $bp-desktop) {
+			padding: 0 toRem(10) toRem(8);
+			font-size: toRem(12);
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	flex-shrink: 0;
+	z-index: 150;
+
+	align-items: center;
+	overflow: hidden;
+	gap: toRem(4);
+	// .logo__img
+	&__img--default {
+		display: block;
+		block-size: toRem(34);
+		inline-size: 100%;
+		object-fit: contain;
+	}
+
+	@media (max-width: toEm(720.98)) {
+		order: -1;
+	}
+
+	@media (max-width: $bp-mobile) {
+		max-inline-size: toRem(160);
+	}
+
+	// .logo__img--color
+	&__img--color {
+		display: none;
+	}
+}
+
+.menu-open body {
+	overflow: hidden;
+}
+
+[data-theme="dark"] .logo__img--default {
+	display: none;
+}
+
+[data-theme="dark"] .logo__img--color {
+	display: block;
+	
+	@media (max-width: $bp-mobile) {
+		max-inline-size: toRem(160);
+	}
+}
