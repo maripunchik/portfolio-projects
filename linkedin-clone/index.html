@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>linkedin-webpage</title>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+
+  <script type="module" crossorigin src="/assets/main-CTXpOha4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BS1LkeED.css">
+</head>
+
+<body>
+
+
+	<nav class="navbar">
+		<div class="navbar__left">
+			<a href="index.html" class="navbar__logo">
+				<img src="data:image/png;base64,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" alt="Logo">
+			</a>
+
+			<label class="search">
+				<svg class="icon">
+					<use xlink:href="/assets/sprite-DUk_ulb1.svg#search"></use>
+				</svg>
+				<input class="search__input" type="text" placeholder="Search">
+			</label>
+		</div>
+
+		<div class="navbar__center">
+			<ul class="navbar__menu menu">
+				<li class="menu__item">
+					<a class="menu__link menu__link--active" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#home"></use>
+						</svg>
+						<span>Home</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#network"></use>
+						</svg>
+
+						<span>My Network</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#jobs"></use>
+						</svg>
+
+						<span>Jobs</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#message"></use>
+						</svg>
+						<span>Messaging</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#notification"></use>
+						</svg>
+
+						<span>Notifications</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="navbar__right">
+			<button class="profile-btn">
+				<img class="profile-img" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+			</button>
+		</div>
+
+		<!-- profile-menu -->
+
+		<div class="profile-menu" id="profileMenu">
+			<div class="profile-menu__inner">
+
+				<div class="profile-menu__user user-info">
+					<div class="user-info__avatar avatar">
+						<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="User photo">
+					</div>
+
+					<div class="user-info__text">
+						<h3 class="user-info__name">Rayan Walton</h3>
+						<a class="user-info__profile-link" href="profile.html">See your profile</a>
+					</div>
+				</div>
+
+				<hr class="profile-menu__divider">
+
+				<a class="profile-menu__link" href="#">
+					<svg class="profile-menu__icon icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#feedback"></use>
+					</svg>
+					<p class="profile-menu__label">Give Feedback</p>
+					<span class="profile-menu__arrow">&gt;</span>
+				</a>
+
+				<a class="profile-menu__link" href="#">
+					<svg class="profile-menu__icon icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#settings"></use>
+					</svg>
+					<p class="profile-menu__label">Settings & Privacy</p>
+					<span class="profile-menu__arrow">&gt;</span>
+				</a>
+
+				<a class="profile-menu__link" href="#">
+					<svg class="profile-menu__icon icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#help"></use>
+					</svg>
+					<p class="profile-menu__label">Help & Support</p>
+					<span class="profile-menu__arrow">&gt;</span>
+				</a>
+
+				<a class="profile-menu__link" href="#">
+					<svg class="profile-menu__icon icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#display"></use>
+					</svg>
+					<p class="profile-menu__label">Display & Accessibility</p>
+					<span class="profile-menu__arrow">&gt;</span>
+				</a>
+
+				<a class="profile-menu__link" href="#">
+					<svg class="profile-menu__icon icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#logout"></use>
+					</svg>
+					<p class="profile-menu__label">Logout</p>
+					<span class="profile-menu__arrow">&gt;</span>
+				</a>
+
+			</div>
+		</div>
+	</nav>
+
+	<!-- navbar close -->
+
+	<div class="container">
+
+		<!-- left-sidebar -->
+		<div class="left-sidebar">
+			<div class="left-sidebar__profile-box">
+				<img class="left-sidebar__cover" src="/assets/cover-pic-ChScMdiE.png" alt="Picture">
+
+				<div class="left-sidebar__profile-info">
+					<div class="left-sidebar__avatar avatar avatar--bordered">
+						<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+					</div>
+					<h1 class="left-sidebar__name">Rayan Walton</h1>
+					<h3 class="left-sidebar__position">Web Developer at Microsoft</h3>
+
+					<ul class="left-sidebar__stats">
+						<li class="left-sidebar__stat">Your profile views<span>52</span></li>
+						<li class="left-sidebar__stat">Your post views<span>810</span></li>
+						<li class="left-sidebar__stat">Your connections<span>205</span></li>
+					</ul>
+				</div>
+
+				<div class="left-sidebar__links">
+					<a class="left-sidebar__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#items"></use>
+						</svg>
+						My items
+					</a>
+					<a class="left-sidebar__link left-sidebar__link--premium" href="#">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#premium"></use>
+						</svg>
+						Try Premium
+					</a>
+				</div>
+			</div>
+
+			<div class="left-sidebar__activity sidebar-activity" id="sidebarActivity">
+				<h3 class="sidebar-activity__title">RECENT</h3>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#recent"></use>
+					</svg>
+					Web Development
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#recent"></use>
+					</svg>
+					User Interface
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#recent"></use>
+					</svg>
+					Online Learning
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#recent"></use>
+					</svg>
+					Learn Online
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#recent"></use>
+					</svg>
+					Code Better
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#recent"></use>
+					</svg>
+					Group Learning
+				</a>
+
+				<h3 class="sidebar-activity__title">GROUPS</h3>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#group"></use>
+					</svg>
+					Web Design Group
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#group"></use>
+					</svg>
+					HTML & CSS Learners
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#group"></use>
+					</svg>
+					Python & JavaScript Group
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#group"></use>
+					</svg>
+					Learn Coding Online
+				</a>
+
+				<h3 class="sidebar-activity__title">HASHTAG</h3>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#hashtag"></use>
+					</svg>
+					webdevelopment
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#hashtag"></use>
+					</svg>
+					userinterface
+				</a>
+				<a class="sidebar-activity__link" href="#">
+					<svg class="icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#hashtag"></use>
+					</svg>
+					onlinelearning
+				</a>
+
+				<div class="sidebar-activity__discover">
+					<a href="#">Discover more</a>
+				</div>
+			</div>
+
+			<p id="showMoreLink">Show more <b>+</b></p>
+		</div>
+
+		<!-- main-content -->
+		<div class="main-content">
+
+			<section class="create-post">
+				<div class="create-post__input">
+					<div class="create-post__avatar avatar">
+						<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+					</div>
+					<textarea autocomplete="off" rows="2" placeholder="Write a post"></textarea>
+				</div>
+
+				<ul class="create-post__links">
+					<li class="create-post__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#photo"></use>
+						</svg>
+						Photo
+					</li>
+					<li class="create-post__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#video"></use>
+						</svg>
+						Video
+					</li>
+					<li class="create-post__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#event"></use>
+						</svg>
+						Event
+					</li>
+					<li class="create-post__link">Post</li>
+				</ul>
+			</section>
+
+			<div class="sort-by">
+				<hr>
+				<p>Sort by:
+					<span>top
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#arrow-down"></use>
+						</svg>
+					</span>
+				</p>
+			</div>
+
+			<article class="post">
+				<header class="post-author">
+					<div class="post-author__avatar avatar avatar--size-35">
+						<img class="avatar__image" src="/assets/user-3--NqLN2aJ.png" alt="UserPhoto">
+					</div>
+					<div class="post-author__title">
+						<h2>Benjamin Leo</h2>
+						<small>Founder and CEO at Gellelio Group | Angel Investor</small>
+						<small>2 hours ago</small>
+					</div>
+				</header>
+
+				<p>The success of every websites depends on search engine optimisation and digital marketing strategy. If
+					you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+				<img class="post__img" src="/assets/post-image-1-2KXYGAUo.png" alt="PostImage">
+
+				<div class="post-stats">
+					<div class="post-stats__items">
+						<div class="post-stats__img-items">
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#like"></use>
+							</svg>
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#love"></use>
+							</svg>
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#clap"></use>
+							</svg>
+						</div>
+
+						<span class="post-stats__liked-users">Abhinav mishra and 75 others</span>
+
+					</div>
+
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+
+				<footer class="post-activity">
+					<div class="post-activity__user-icon-items">
+						<div class="post-activity__avatar avatar avatar--size-22">
+							<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+						</div>
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#arrow-down"></use>
+						</svg>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#like"></use>
+						</svg>
+						<span>Like</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#comment"></use>
+						</svg>
+						<span>Comment</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#share"></use>
+						</svg>
+						<span>Share</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#send"></use>
+						</svg>
+						<span>Send</span>
+					</div>
+				</footer>
+			</article>
+
+			<article class="post">
+				<header class="post-author">
+					<div class="post-author__avatar avatar avatar--size-35">
+						<img class="avatar__image" src="/assets/user-4-C6vxu2za.png" alt="UserPhoto">
+					</div>
+
+					<div class="post-author__title">
+						<h2>Clarence George</h2>
+						<small>Founder and CEO at Gellelio Group | Angel Investor</small>
+						<small>2 hours ago</small>
+					</div>
+				</header>
+
+				<p>The success of every websites depends on search engine optimisation and digital marketing strategy. If
+					you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+				<img class="post__img" src="/assets/post-image-2-CvF4XoXp.png" alt="PostImage">
+
+				<div class="post-stats">
+					<div class="post-stats__items">
+						<div class="post-stats__img-items">
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#like"></use>
+							</svg>
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#love"></use>
+							</svg>
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#clap"></use>
+							</svg>
+						</div>
+
+						<span class="post-stats__liked-users">Abhinav mishra and 75 others</span>
+
+					</div>
+
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+
+				<footer class="post-activity">
+					<div class="post-activity__user-icon-items">
+						<div class="post-activity__avatar avatar avatar--size-22">
+							<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+						</div>
+
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#arrow-down"></use>
+						</svg>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#like"></use>
+						</svg>
+						<span>Like</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#comment"></use>
+						</svg>
+						<span>Comment</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#share"></use>
+						</svg>
+						<span>Share</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#send"></use>
+						</svg>
+						<span>Send</span>
+					</div>
+				</footer>
+			</article>
+
+			<article class="post">
+				<header class="post-author">
+					<div class="post-author__avatar avatar avatar--size-35">
+						<img class="avatar__image" src="/assets/user-4-C6vxu2za.png" alt="UserPhoto">
+					</div>
+					<div class="post-author__title">
+						<h2>Benjamin Leo</h2>
+						<small>Founder and CEO at Gellelio Group | Angel Investor</small>
+						<small>2 hours ago</small>
+					</div>
+				</header>
+
+				<p>The success of every websites depends on search engine optimisation and digital marketing strategy. If
+					you are on first page of all major search engines then you are ahead among your competitors.</p>
+
+				<img class="post__img" src="/assets/post-image-3-CN9MysxL.png" alt="PostImage">
+
+				<div class="post-stats">
+					<div class="post-stats__items">
+						<div class="post-stats__img-items">
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#like"></use>
+							</svg>
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#love"></use>
+							</svg>
+							<svg class="icon">
+								<use xlink:href="/assets/sprite-DUk_ulb1.svg#clap"></use>
+							</svg>
+						</div>
+
+						<span class="post-stats__liked-users">Abhinav mishra and 75 others</span>
+
+					</div>
+
+					<div>
+						<span>22 comments &middot; 40 shares</span>
+					</div>
+				</div>
+
+				<footer class="post-activity">
+					<div class="post-activity__user-icon-items">
+						<div class="post-activity__avatar avatar avatar--size-22">
+							<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+						</div>
+
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#arrow-down"></use>
+						</svg>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#like"></use>
+						</svg>
+						<span>Like</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#comment"></use>
+						</svg>
+						<span>Comment</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#share"></use>
+						</svg>
+						<span>Share</span>
+					</div>
+					<div class="post-activity__link">
+						<svg class="icon">
+							<use xlink:href="/assets/sprite-DUk_ulb1.svg#send"></use>
+						</svg>
+						<span>Send</span>
+					</div>
+				</footer>
+			</article>
+
+		</div>
+
+		<!-- right-sidebar -->
+		<div class="right-sidebar">
+			<div class="sidebar-news">
+				<div class="sidebar-news__title-box">
+					<h3 class="sidebar-news__sub-title">Trending News</h3>
+					<svg class="icon info-icon">
+						<use xlink:href="/assets/sprite-DUk_ulb1.svg#more"></use>
+					</svg>
+				</div>
+
+				<ul class="sidebar-news__items">
+					<li class="sidebar-news__item">
+						<a class="sidebar-news__link" href="#">High demand for skilled manpower</a>
+						<span>1d ago &middot; 10,934 readers</span>
+					</li>
+
+					<li class="sidebar-news__item"><a class="sidebar-news__link" href="#">Careers growing horizontally
+							too</a>
+						<span>19h ago &middot; 1,552 readers</span>
+					</li>
+
+					<li class="sidebar-news__item"><a class="sidebar-news__link" href="#">Less work visa for US, more for
+							UK</a>
+						<span>1d ago &middot; 27,290 readers</span>
+					</li>
+
+					<li class="sidebar-news__item"><a class="sidebar-news__link" href="#">More hiring = higher
+							confidence?</a>
+						<span>18h ago &middot; 7,905 readers</span>
+					</li>
+
+					<li class="sidebar-news__item"><a class="sidebar-news__link" href="#">Gautam Adani is the world's third
+							richest</a>
+						<span>12h ago &middot; 6,100 readers</span>
+					</li>
+
+				</ul>
+
+				<a class="read-more-link" href="#">Read More</a>
+
+			</div>
+
+			<div class="sidebar-ad">
+				<small>Ad &middot; &middot; &middot;</small>
+				<p>Master the 5 principles of web design</p>
+				<div class="sidebar-ad__image-items">
+					<div class="sidebar-ad__avatar avatar avatar--size-60">
+						<img class="avatar__image" src="/assets/user-1-Bga09tFG.png" alt="UserPhoto">
+					</div>
+					<div class="sidebar-ad__avatar avatar avatar--size-60">
+						<img class="avatar__image" src="data:image/png;base64,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" alt="MiLogo">
+					</div>
+
+				</div>
+				<b>Brand and Demand in Xiaomi</b>
+				<a class="sidebar-ad__ad-link" href="#">Learn More</a>
+			</div>
+
+			<div class="sidebar-useful-links">
+				<a class="sidebar-useful-links__link" href="#">About</a>
+				<a class="sidebar-useful-links__link" href="#">Accessibility</a>
+				<a class="sidebar-useful-links__link" href="#">Help Center</a>
+				<a class="sidebar-useful-links__link" href="#">Privacy Policy</a>
+				<a class="sidebar-useful-links__link" href="#">Advertising</a>
+				<a class="sidebar-useful-links__link" href="#">Get the App</a>
+				<a class="sidebar-useful-links__link" href="#">More</a>
+			</div>
+
+			<div class="copyright-msg">
+				<img src="data:image/png;base64,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" alt="Logo">
+				<p>Linkedup &#169; 2025. All rights reserved</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
