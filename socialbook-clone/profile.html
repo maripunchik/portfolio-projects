@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile page - SocialBook-clone</title>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+
+	<script src="https://kit.fontawesome.com/3d0a468d11.js" crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/main-BvQs4TQf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BGN8AjpW.css">
+</head>
+
+<body>
+
+	<nav class="navbar">
+		<!-- navbar__left -->
+		<div class="navbar__left">
+			<a href="index.html" class="navbar__logo">
+				<img src="/images/logo2.png" alt="Logo">
+			</a>
+			<ul class="navbar__menu menu">
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#notification"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#message"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#video"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- navbar__right -->
+		<div class="navbar__right">
+
+			<label class="navbar__search">
+				<svg class="icon">
+					<use xlink:href="/images/sprite.svg#search"></use>
+				</svg>
+				<input class="navbar__input" type="text" placeholder="Search">
+			</label>
+
+			<button class="profile-btn online">
+				<div class="avatar avatar--size-40">
+					<img class="avatar__image" src="/images/profile-pic.png" alt="Profile image">
+				</div>
+			</button>
+		</div>
+
+
+		<!----------------dropdown-settings-menu ----------->
+		<div class="settings-menu">
+
+			<div id="dark-btn">
+				<span></span>
+			</div>
+
+			<div class="settings-menu-inner">
+				<div class="user-profile">
+					<div class="user-profile__avatar avatar">
+						<img class="avatar__image" src="/images/profile-pic.png" alt="Profile Image">
+					</div>
+					<div class="user-profile__content">
+						<h3 class="user-profile__name">John Nicholson</h3>
+						<a class="user-profile__link" href="profile.html">See your profile</a>
+					</div>
+				</div>
+				<hr>
+				<div class="user-profile">
+					<svg class="icon">
+						<use xlink:href="/images/sprite.svg#feedback"></use>
+					</svg>
+					<div class="user-profile__text">
+						<p>Give Feedback</p>
+						<a class="user-profile__link" href="#">Help us to improve the new design</a>
+					</div>
+				</div>
+				<hr>
+
+				<div class="settings-menu-inner__links">
+					<a class="settings-menu-inner__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#settings"></use>
+						</svg>
+						<p>Settings & Privacy</p>
+						<span>&gt;</span>
+					</a>
+
+					<a class="settings-menu-inner__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#help"></use>
+						</svg>
+						<p>Help & Support</p>
+						<span>&gt;</span>
+					</a>
+
+					<a class="settings-menu-inner__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#display"></use>
+						</svg>
+						<p>Display & Accessibility</p>
+						<span>&gt;</span>
+					</a>
+
+					<a class="settings-menu-inner__link" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#logout"></use>
+						</svg>
+						<p>Logout</p>
+						<span>&gt;</span>
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<!--------------- profile page ----------------->
+
+	<div class="profile-page">
+
+		<div class="profile-page__container">
+			<img class="profile__cover-img" src="/images/cover.png" alt="Cover Photo">
+			<!-- profile-details -->
+			<div class="profile-details">
+				<div class="profile-details__left">
+					<div class="profile-details__row">
+						<img class="profile-details__image" src="/images/profile.png" alt="Profile image">
+						<div class="profile-details__friends">
+							<h3 class="profile-details__name">Jack Nicholson</h3>
+							<p class="profile-details__stats">120 Friends - 20 mutual</p>
+							<div class="profile-details__avatars">
+
+								<div class="profile-details__avatar avatar avatar--size-25">
+									<img class="avatar__image" src="/images/members/member-1.png" alt="Photo">
+								</div>
+
+								<div class="profile-details__avatar avatar avatar--size-25">
+									<img class="avatar__image" src="/images/members/member-2.png" alt="Photo">
+								</div>
+
+								<div class="profile-details__avatar avatar avatar--size-25">
+									<img class="avatar__image" src="/images/members/member-3.png" alt="Photo">
+								</div>
+
+								<div class="profile-details__avatar avatar avatar--size-25">
+									<img class="avatar__image" src="/images/members/member-4.png" alt="Photo">
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="profile-details__right">
+					<div class="profile-details__actions">
+						<button type="button" class="profile-details__action-btn profile-details__action-btn--color">
+							<svg class="icon">
+								<use xlink:href="/images/sprite.svg#add-friend"></use>
+							</svg>
+							Friend
+						</button>
+						<button type="button" class="profile-details__action-btn">
+							<svg class="icon">
+								<use xlink:href="/images/sprite.svg#message"></use>
+							</svg>
+							Message
+						</button>
+					</div>
+
+					<a class="profile-details__more" href="#">
+						<svg class="icon">
+							<use xlink:href="/images/sprite.svg#more-horizontal"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<!-- profile-info -->
+			<div class="profile-info">
+				<!-- profile-info__col--info -->
+				<div class="profile-info__col profile-info__col--info">
+					<!-- intro -->
+					<section class="intro">
+						<h3 class="intro__title">Intro</h3>
+						<div class="intro__text">
+							<p>Believe in yourself and you can do unbelievable things.
+								<svg class="icon">
+									<use xlink:href="/images/sprite.svg#feeling"></use>
+								</svg>
+							</p>
+						</div>
+						<hr class="intro__divider">
+
+						<ul class="intro__list">
+							<li class="intro__item">
+								<svg class="icon">
+									<use xlink:href="/images/sprite.svg#briefcase"></use>
+								</svg>
+								Director at 99media Ltd
+							</li>
+							<li class="intro__item">
+								<svg class="icon">
+									<use xlink:href="/images/sprite.svg#graduation-cap"></use>
+								</svg>
+								Studied att Amity
+								University
+							</li>
+							<li class="intro__item">
+								<svg class="icon">
+									<use xlink:href="/images/sprite.svg#graduation-cap"></use>
+								</svg>
+								Went to DPS Delhi
+							</li>
+							<li class="intro__item">
+								<svg class="icon">
+									<use xlink:href="/images/sprite.svg#home"></use>
+								</svg>
+								Lives in Bangalore,
+								India
+							</li>
+							<li class="intro__item">
+								<svg class="icon">
+									<use xlink:href="/images/sprite.svg#location"></use>
+								</svg>
+								From Bangalore,
+								India
+							</li>
+						</ul>
+
+					</section>
+					<!-- photos -->
+					<section class="photos">
+
+						<div class="photos__title section-title">
+							<h3 class="section-title__title">Photos</h3>
+							<a class="section-title__link" href="#">All Photos</a>
+						</div>
+
+						<div class="photos__grid">
+							<div class="photos__item">
+								<img class="photos__img" src="/images/photo/photo1.png" alt="">
+							</div>
+							<div class="photos__item">
+								<img class="photos__img" src="/images/photo/photo2.png" alt="">
+							</div>
+							<div class="photos__item">
+								<img class="photos__img" src="/images/photo/photo3.png" alt="">
+							</div>
+							<div class="photos__item">
+								<img class="photos__img" src="/images/photo/photo4.png" alt="">
+							</div>
+							<div class="photos__item">
+								<img class="photos__img" src="/images/photo/photo5.png" alt="">
+							</div>
+							<div class="photos__item">
+								<img class="photos__img" src="/images/photo/photo6.png" alt="">
+							</div>
+						</div>
+
+					</section>
+					<!-- friends -->
+					<section class="friends">
+
+						<div class="friends__title section-title">
+							<h3 class="section-title__title">Friends</h3>
+							<a class="section-title__link" href="#">All Friends</a>
+						</div>
+
+						<div class="friends__count">
+							<p>120 (10 mutual)</p>
+						</div>
+
+						<div class="friends__grid">
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-1.png" alt="">
+								<p>Joseph N</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-2.png" alt="">
+								<p>Nathan N</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-3.png" alt="">
+								<p>George D</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-4.png" alt="">
+								<p>Francis L</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-5.png" alt="">
+								<p>Anthony E</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-6.png" alt="">
+								<p>Michael A</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-7.png" alt="">
+								<p>Edward M</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-8.png" alt="">
+								<p>Bradon C</p>
+							</div>
+							<div class="friends__item">
+								<img class="friends__img" src="/images/members/member-9.png" alt="">
+								<p>James Doe</p>
+							</div>
+						</div>
+
+					</section>
+
+				</div>
+
+				<div class="profile-info__col profile-info__col--posts">
+
+					<section class="write-post">
+						<div class="write-post__user">
+							<div class="write-post__avatar avatar avatar--size-45">
+								<img class="avatar__image" src="/images/profile-pic.png" alt="Profile image">
+							</div>
+
+							<div class="write-post__user-info">
+								<h3>John Nicholson</h3>
+								<small>Public <i class="fa-solid fa-caret-down"></i></small>
+							</div>
+						</div>
+
+						<div class="write-post__input">
+							<textarea class="write-post__textarea" rows="3" placeholder="What's on your mind, John"></textarea>
+
+							<div class="write-post__actions">
+								<a class="write-post__action-link" href="#">
+									<svg class="icon">
+										<use href="/images/sprite.svg#live-video"></use>
+									</svg>
+									Live Video
+								</a>
+								<a class="write-post__action-link" href="#">
+									<svg class="icon">
+										<use href="/images/sprite.svg#photo-video"></use>
+									</svg>
+									Photo/Video
+								</a>
+								<a class="write-post__action-link" href="#">
+									<svg class="icon">
+										<use href="/images/sprite.svg#feeling"></use>
+									</svg>
+									Feling/Activity
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<!-- posts-container -->
+					<div id="posts-container"></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		<p>©2025</p>
+	</div>
+
+
+</body>
+
+</html>
