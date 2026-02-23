@@ -1,0 +1,20 @@
+:root {
+	--body-color: #efefef;
+
+
+	--nav-color: #ed3833;
+	--bg-color: #fff;
+	--color-border: #999;
+	--color-border-light: #ccc;
+
+	--color-text: #5a5a5a;
+	--hover-bg: rgba(0, 0, 0, 0.05);
+}
+
+.dark-theme {
+	--body-color: #0a0a0a;
+	--nav-color: #ed3833;
+
+	--bg-color: #000;
+	--hover-bg: rgba(215, 207, 207, 0.05);
+}

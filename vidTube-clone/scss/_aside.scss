@@ -1,0 +1,132 @@
+.sidebar {
+	@include flex-col(20);
+	background: #f9f9f9;
+	width: 15%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	padding-left: 2%;
+	padding-top: toRem(80);
+	transition: width 0.3s ease;
+
+	@media (max-width: $bp-tablet) {
+		display: none;
+	}
+
+	&--small {
+		width: 5%;
+
+		.shortcut__label,
+		.subscribed__label {
+			display: none;
+		}
+
+		.subscribed__title {
+			display: none;
+		}
+
+		.sidebar__divider {
+			width: 50%;
+		}
+	}
+
+	// .sidebar__divider
+	&__divider {
+		height: toRem(1);
+		width: 85%;
+		background: var(--color-border-light);
+		align-self: center;
+	}
+}
+.shortcut {
+	@include flex-col(20);
+
+	// .shortcut__item
+	&__item {
+		&.shortcut__item--active .shortcut__link {
+			color: var(--nav-color);
+		}
+
+		@media (any-hover: hover) {
+			&:not(.shortcut__item--active):hover .shortcut__link {
+				color: var(--nav-color);
+			}
+		}
+	}
+
+	// .shortcut__link
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: toRem(20);
+		width: fit-content;
+		color: inherit;
+
+		@media (max-width: $bp-desktop) {
+			font-size: toRem(14);
+			gap: toRem(10);
+		}
+	}
+
+	// .shortcut__icon
+	&__icon {
+		@include size(20, 20);
+		fill: currentColor;
+
+		@media (max-width: $bp-desktop) {
+			@include size(18, 18);
+		}
+	}
+
+	// .shortcut__label
+	&__label {
+		color: currentColor;
+	}
+}
+.subscribed {
+	@include flex-col(20);
+
+	// .subscribed__title
+	&__title {
+		text-transform: uppercase;
+		font-size: toRem(13);
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	// .subscribed__list
+	&__list {
+		@include flex-col(20);
+	}
+
+	// .subscribed__link
+	&__link {
+		display: flex;
+		align-items: center;
+		row-gap: toRem(5);
+		column-gap: toRem(20);
+		width: fit-content;
+		transition:
+			color 0.2s ease,
+			opacity 0.2s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--nav-color);
+				opacity: 0.65;
+			}
+		}
+
+		@media (max-width: $bp-desktop) {
+			font-size: toRem(14);
+			gap: toRem(10);
+		}
+	}
+
+	// .subscribed__icon
+	&__icon {
+		@include size(25, 25);
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+}

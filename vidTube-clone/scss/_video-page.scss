@@ -1,0 +1,261 @@
+.video-page {
+	// .video-page__container
+	&__container {
+		padding-inline-start: 2%;
+
+		@media (max-width: $bp-tablet) {
+			padding-inline-start: 2%;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+		@media (max-width: $bp-tablet) {
+			gap: toRem(20);
+		}
+	}
+}
+
+.video-player {
+	flex-basis: 69%;
+
+	@media (max-width: $bp-desktop-lg) {
+		flex-basis: 59%;
+	}
+
+	@media (max-width: $bp-tablet) {
+		flex-basis: 100%;
+	}
+
+	// .video-player__media
+	&__media {
+		@include flex-col(5);
+
+		@media (max-width: $bp-tablet) {
+			gap: toRem(15);
+		}
+	}
+
+	&__video-wrapper {
+		width: 100%;
+		height: toRem(600);
+		overflow: hidden;
+		@media (max-width: $bp-tablet) {
+			height: toRem(200);
+		}
+	}
+
+	// .video-player__video
+	&__video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	// .video-player__title
+	&__title {
+		color: #000;
+		font-size: toRem(22);
+		font-weight: 600;
+		text-transform: capitalize;
+
+		@media (max-width: $bp-tablet) {
+			font-size: toRem(20);
+			line-height: 1.2;
+		}
+	}
+
+	// .video-player__info
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: toRem(10) toRem(15);
+		justify-content: space-between;
+		flex-wrap: wrap;
+		font-size: toRem(14);
+	}
+}
+.tags {
+	// .tags__link
+	&__link {
+		color: #00f;
+		font-size: toRem(13);
+	}
+}
+.actions {
+	display: flex;
+	gap: toRem(15);
+	font-size: toRem(14);
+
+	@media (max-width: $bp-tablet) {
+		gap: toRem(20);
+	}
+
+	// .actions__item
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: toRem(5);
+
+		@media (max-width: $bp-tablet) {
+			gap: toRem(3);
+		}
+	}
+
+	// .actions__icon
+	&__icon {
+		@include size(20, 20);
+	}
+}
+
+.publisher {
+	display: flex;
+	gap: toRem(20);
+	padding-block: toRem(20);
+	flex-wrap: wrap;
+
+	// .publisher__avatar
+	&__avatar {
+		@include avatar(40);
+	}
+
+	// .publisher__title-box
+	&__title-box {
+		flex: 1;
+		line-height: 1.3;
+		/* 18/13 */
+	}
+
+	// .publisher__title
+	&__title {
+		color: #000;
+		font-weight: 600;
+		font-size: toRem(18);
+	}
+
+	// .publisher__label
+	&__label {
+		font-size: toRem(13);
+		white-space: nowrap;
+	}
+
+	// .publisher__subscribe-btn
+	&__subscribe-btn {
+		background: #ff0000;
+		color: #fff;
+		padding: toRem(8) toRem(30);
+		border-radius: toRem(4);
+		height: toRem(40);
+		min-width: toRem(180);
+
+		transition:
+			background 0.3s ease,
+			transform 0.3s ease;
+
+		@media (max-width: $bp-tablet) {
+			flex-grow: 1;
+			flex-shrink: 0;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: darken(#ff0000, 9%);
+				transform: translateY(toRem(-2));
+			}
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+}
+
+.description {
+	@include flex-col(15);
+
+	padding-inline-start: toRem(55);
+	font-size: toRem(14);
+
+	@media (max-width: $bp-tablet) {
+		padding-inline-start: 0;
+	}
+
+	// .description__text
+	&__text {
+		@include flex-col(5);
+	}
+
+	// .description__comments-title
+	&__comments-title {
+		font-weight: 600;
+	}
+}
+
+.add-comment {
+	display: flex;
+	justify-content: center;
+	gap: toRem(10);
+	padding: toRem(30) 0;
+
+	// .add-comment__avatar
+	&__avatar {
+		@include avatar(40);
+	}
+
+	// .add-comment__input
+	&__input {
+		border-bottom: toRem(1) solid var(--color-border-light);
+		padding-top: toRem(10);
+	}
+}
+
+.comment {
+	display: flex;
+	justify-content: center;
+	gap: toRem(15);
+	padding: toRem(10) 0;
+
+	// .comment__avatar
+	&__avatar {
+		@include avatar(40);
+		align-self: center;
+	}
+
+	// .comment__body
+	&__body {
+		@include flex-col(3);
+	}
+
+	// .comment__author
+	&__author {
+		font-size: toRem(14);
+		font-weight: 600;
+		color: #000;
+
+		span {
+			font-size: toRem(12);
+			font-weight: 500;
+			color: var(--color-text);
+			margin-inline-start: toRem(5);
+		}
+	}
+
+	// .comment__actions
+	&__actions {
+		display: flex;
+		gap: toRem(20);
+
+		@media (max-width: $bp-tablet) {
+			font-size: toRem(12);
+		}
+	}
+
+	// .comment__link
+	&__link {
+		color: #0000ff;
+	}
+}
