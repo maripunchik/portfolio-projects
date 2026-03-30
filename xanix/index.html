@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body>*:not(.fls-preloader) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	[data-fls-preloader-loaded] body>*:not(.fls-preloader) {
+		transition: opacity 0.5s ease 0s;
+		opacity: 1;
+		visibility: visible;
+	}
+		</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1774859220079"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774859220079">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774859220079">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div data-fls-overlay="" class="overlay" id="overlay"></div>
+			<header data-fls-header="" data-fls-header-scroll="100" data-fls-header-scroll-show="1000" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="#" class="header__link-logo">
+							<img src="./assets/img/logo.svg" class="header__logo" alt="Logo XANIX company">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#works" class="menu__link">Works</a>
+									</li>
+									<li class="menu__item">
+										<a href="#about" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="#contact" class="menu__link">Contact</a>
+									</li>
+									<li class="menu__item">
+										<a href="#blog" class="menu__link">Blog</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<div class="header__actions">
+							<a href="#" data-fls-scrollto=".pricing" data-fls-scrollto-top="100" data-fls-button="" class="header__button button button--arrow">
+								<span>Pricing</span>
+								<span data-fls-arrow="" class="icon icon--arrow icon--arrow-animated"></span>
+							</a>
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<figure class="page__decor page__decor--top">
+					<img src="./assets/img/bg/line1.svg" alt="Decor">
+				</figure>
+				<!-- hero -->
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__blockhead blockhead">
+							<h1 class="blockhead__title">
+								We’re a creative
+								<span>design</span>
+								agency
+							</h1>
+							<div class="blockhead__text">
+								<p>
+									Pulvinar laoreet vel eget sed facilisi felis nisi malesuada pulvinar scelerisque et velit vulputate
+						enim consectetur
+						donec lobortis mattis enim vehi.
+								</p>
+							</div>
+						</div>
+						<div class="hero__button-wrapper">
+							<a href="#" target="_blank" rel="noopener noreferrer" data-fls-button="" class="hero__button button button--arrow button--radius-12">
+								<span>Book a demo</span>
+								<span data-fls-arrow="" class="icon icon--arrow icon--arrow-animated"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- clients -->
+				<div class="page__clients clients">
+					<ul data-fls-marquee="" data-fls-marquee-speed="200" class="clients__container">
+						<li class="clients__item">
+							<img src="./assets/img/clients/clients-estate.svg" alt="Image">
+						</li>
+						<li class="clients__item">
+							<img src="./assets/img/clients/clients-seal.svg" alt="Image">
+						</li>
+						<li class="clients__item">
+							<img src="./assets/img/clients/clients-sora.svg" alt="Image">
+						</li>
+						<li class="clients__item">
+							<img src="./assets/img/clients/clients-venus.svg" alt="Image">
+						</li>
+						<li class="clients__item">
+							<img src="./assets/img/clients/clients-spine.svg" alt="Image">
+						</li>
+						<li class="clients__item">
+							<img src="./assets/img/clients/clients-ether.svg" alt="Image">
+						</li>
+					</ul>
+				</div>
+				<!-- services -->
+				<section class="page__services services" id="about">
+					<div class="services__container">
+						<div data-fls-headericon="" class="services__header headericon">
+							<svg class="icon icon--lightning">
+								<use xlink:href="./assets/img/spritemap.svg#sprite-lightning"></use>
+							</svg>
+							<h3 class="headericon__title">We offer a wide range of design services</h3>
+						</div>
+						<ul class="services__items">
+							<li class="services__item">
+								<a href="#" class="services__link">
+									<span class="services__label">Branding</span>
+									<span data-fls-arrow="" class="icon icon--arrow icon--arrow-big"></span>
+								</a>
+							</li>
+							<li class="services__item">
+								<a href="#" class="services__link">
+									<span class="services__label">Motion Design</span>
+									<span data-fls-arrow="" class="icon icon--arrow icon--arrow-big"></span>
+								</a>
+							</li>
+							<li class="services__item">
+								<a href="#" class="services__link">
+									<span class="services__label">Webflow Development</span>
+									<span data-fls-arrow="" class="icon icon--arrow icon--arrow-big"></span>
+								</a>
+							</li>
+							<li class="services__item">
+								<a href="#" class="services__link">
+									<span class="services__label">UI/UX Design</span>
+									<span data-fls-arrow="" class="icon icon--arrow icon--arrow-big"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<figure class="page__decor page__decor--middle">
+					<img src="./assets/img/bg/line.svg" alt="Decor">
+				</figure>
+				<!-- works -->
+				<section class="page__works works" id="works">
+					<div class="works__container">
+						<div class="works__head">
+							<div data-fls-headericon="" class="works__header headericon">
+								<svg class="icon icon--work-history">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-work-history"></use>
+								</svg>
+								<h3 class="headericon__title">Recent Works</h3>
+							</div>
+							<div class="works__text">
+								<p>
+									Stunning websites made for wicked clients (the cool wicked, not fairy-tale-stepmother wicked).
+								</p>
+							</div>
+						</div>
+						<div class="works__slider">
+							<div class="works__list">
+								<article class="works__item">
+									<a href="#" class="works__link-preview">
+										<div class="works__image-container">
+											<div class="works__image-wrapper">
+												<picture>
+													<img class="works__image" alt="Work number 1 Preview" loading="lazy" src="./assets/img/works/01.webp">
+												</picture>
+											</div>
+											<div class="works__overlay">
+												<button class="works__button">View</button>
+											</div>
+										</div>
+										<div class="works__info">
+											<span class="works__category">UI/UX, Branding</span>
+											<h3 class="works__name">Boltzshift Agency</h3>
+										</div>
+									</a>
+								</article>
+								<article class="works__item">
+									<a href="#" class="works__link-preview">
+										<div class="works__image-container">
+											<div class="works__image-wrapper">
+												<picture>
+													<img class="works__image" alt="Work number 1 Preview" loading="lazy" src="./assets/img/works/02.webp">
+												</picture>
+											</div>
+											<div class="works__overlay">
+												<button class="works__button">View Case</button>
+											</div>
+										</div>
+										<div class="works__info">
+											<span class="works__category">Design, Development</span>
+											<h3 class="works__name">Iravit Sass</h3>
+										</div>
+									</a>
+								</article>
+								<article class="works__item">
+									<a href="#" class="works__link-preview">
+										<div class="works__image-container">
+											<div class="works__image-wrapper">
+												<picture>
+													<img class="works__image" alt="Work number 1 Preview" loading="lazy" src="./assets/img/works/03.webp">
+												</picture>
+											</div>
+											<div class="works__overlay">
+												<button class="works__button">View Case</button>
+											</div>
+										</div>
+										<div class="works__info">
+											<span class="works__category">UI/UX, Branding</span>
+											<h3 class="works__name">Paypulse Bank</h3>
+										</div>
+									</a>
+								</article>
+								<article class="works__item">
+									<a href="#" class="works__link-preview">
+										<div class="works__image-container">
+											<div class="works__image-wrapper">
+												<picture>
+													<img class="works__image" alt="Work number 1 Preview" loading="lazy" src="./assets/img/works/04.webp">
+												</picture>
+											</div>
+											<div class="works__overlay">
+												<button class="works__button">View Case</button>
+											</div>
+										</div>
+										<div class="works__info">
+											<span class="works__category">UI/UX</span>
+											<h3 class="works__name">Rivera Template</h3>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="works__cta">
+							<div class="works__cta-text">Are you impressed with what you've seen so far?</div>
+							<a href="#" data-fls-button="" class="works__button-arrow button button--arrow button--radius-12">
+								<span>See all works</span>
+								<span data-fls-arrow="" class="icon icon--arrow icon--arrow-animated"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- pricing -->
+				<section class="page__pricing pricing">
+					<div class="pricing__container">
+						<div data-fls-headericon="" class="pricing__header headericon">
+							<svg class="icon icon--hot-price">
+								<use xlink:href="./assets/img/spritemap.svg#sprite-hot-price"></use>
+							</svg>
+							<h3 class="headericon__title">Pricing</h3>
+						</div>
+						<div class="pricing__items">
+							<article data-fls-itemprising="" class="item-pricing" data-popular="false">
+								<div class="item-pricing__inner">
+									<div class="item-pricing__header">
+										<div class="item-pricing__title-box">
+											<h4 class="item-pricing__title">Basic</h4>
+											<div class="item-pricing__text">
+												<p>Affordable and reliable for small business</p>
+											</div>
+										</div>
+										<div class="item-pricing__value">
+											$999
+											<span>/month</span>
+										</div>
+										<a href="#" data-fls-button="" class="pricing__button button">
+											<span>Choose plan</span>
+										</a>
+									</div>
+									<ul class="item-pricing__services">
+										<li class="item-pricing__service">One request at a time</li>
+										<li class="item-pricing__service">Unlimited design requests</li>
+										<li class="item-pricing__service">Basic design requirements, excluding web and product design</li>
+										<li class="item-pricing__service">Custom graphics, posters, ads etc.</li>
+										<li class="item-pricing__service">Cancel anytime</li>
+									</ul>
+								</div>
+							</article>
+							<article data-fls-itemprising="" class="item-pricing item-pricing--popular" data-popular="true">
+								<div class="item-pricing__inner">
+									<div class="item-pricing__popular">Popular</div>
+									<div class="item-pricing__header">
+										<div class="item-pricing__title-box">
+											<h4 class="item-pricing__title">Pro</h4>
+											<div class="item-pricing__text">
+												<p>Affordable and reliable for small business</p>
+											</div>
+										</div>
+										<div class="item-pricing__value">
+											$1,889
+											<span>/month</span>
+										</div>
+										<a href="#" data-fls-button="" class="pricing__button button">
+											<span>Choose plan</span>
+										</a>
+									</div>
+									<ul class="item-pricing__services">
+										<li class="item-pricing__service">One request at a time</li>
+										<li class="item-pricing__service">Unlimited design requests</li>
+										<li class="item-pricing__service">Basic design requirements, excluding web and product design</li>
+										<li class="item-pricing__service">Custom graphics, posters, ads etc.</li>
+										<li class="item-pricing__service">Cancel anytime</li>
+									</ul>
+								</div>
+							</article>
+							<article data-fls-itemprising="" class="item-pricing" data-popular="false">
+								<div class="item-pricing__inner">
+									<div class="item-pricing__header">
+										<div class="item-pricing__title-box">
+											<h4 class="item-pricing__title">Premium</h4>
+											<div class="item-pricing__text">
+												<p>Affordable and reliable for Agency &amp; Startups.</p>
+											</div>
+										</div>
+										<div class="item-pricing__value">
+											$2,999
+											<span>/month</span>
+										</div>
+										<a href="#" data-fls-button="" class="pricing__button button">
+											<span>Choose plan</span>
+										</a>
+									</div>
+									<ul class="item-pricing__services">
+										<li class="item-pricing__service">One request at a time</li>
+										<li class="item-pricing__service">Unlimited design requests</li>
+										<li class="item-pricing__service">Basic design requirements, excluding web and product design</li>
+										<li class="item-pricing__service">Custom graphics, posters, ads etc.</li>
+										<li class="item-pricing__service">Cancel anytime</li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<!-- testimonials -->
+				<section class="page__testimonials testimonials" id="blog">
+					<div class="testimonials__container">
+						<div data-fls-headericon="" class="testimonials__header headericon">
+							<svg class="icon icon--star">
+								<use xlink:href="./assets/img/spritemap.svg#sprite-star"></use>
+							</svg>
+							<h3 class="headericon__title">Testimonials</h3>
+						</div>
+					</div>
+					<div data-fls-slider="" class="testimonials__slider swiper">
+						<div class="testimonials__wrapper swiper-wrapper">
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__rating rating" data-fls-rating="set" data-fls-rating-value="5"></div>
+								<div class="testimonials__content">
+									<h4 class="testimonials__title">“Affordable and reliable for small business”</h4>
+									<div class="testimonials__text">
+										<p>At Neero, we are committed to pushing the boundaries.</p>
+									</div>
+								</div>
+								<div class="testimonials__user">
+									<picture>
+										<img class="testimonials__user-img" alt="Avatar" src="./assets/img/testimonials/avatar.webp">
+									</picture>
+									<div class="testimonials__user-info">
+										<div class="testimonials__user-name">Tyson</div>
+										<div class="testimonials__user-profession">Designer</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__rating rating" data-fls-rating="set" data-fls-rating-value="5"></div>
+								<div class="testimonials__content">
+									<h4 class="testimonials__title">“Affordable and reliable for small business”</h4>
+									<div class="testimonials__text">
+										<p>At Neero, we are committed to pushing the boundaries.</p>
+									</div>
+								</div>
+								<div class="testimonials__user">
+									<picture>
+										<img class="testimonials__user-img" alt="Avatar" src="./assets/img/testimonials/avatar.webp">
+									</picture>
+									<div class="testimonials__user-info">
+										<div class="testimonials__user-name">Tyson</div>
+										<div class="testimonials__user-profession">Designer</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__rating rating" data-fls-rating="set" data-fls-rating-value="5"></div>
+								<div class="testimonials__content">
+									<h4 class="testimonials__title">“Affordable and reliable for small business”</h4>
+									<div class="testimonials__text">
+										<p>At Neero, we are committed to pushing the boundaries.</p>
+									</div>
+								</div>
+								<div class="testimonials__user">
+									<picture>
+										<img class="testimonials__user-img" alt="Avatar" src="./assets/img/testimonials/avatar.webp">
+									</picture>
+									<div class="testimonials__user-info">
+										<div class="testimonials__user-name">Tyson</div>
+										<div class="testimonials__user-profession">Designer</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__rating rating" data-fls-rating="set" data-fls-rating-value="5"></div>
+								<div class="testimonials__content">
+									<h4 class="testimonials__title">“Affordable and reliable for small business”</h4>
+									<div class="testimonials__text">
+										<p>At Neero, we are committed to pushing the boundaries.</p>
+									</div>
+								</div>
+								<div class="testimonials__user">
+									<picture>
+										<img class="testimonials__user-img" alt="Avatar" src="./assets/img/testimonials/avatar.webp">
+									</picture>
+									<div class="testimonials__user-info">
+										<div class="testimonials__user-name">Tyson</div>
+										<div class="testimonials__user-profession">Designer</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__slide swiper-slide">
+								<div class="testimonials__rating rating" data-fls-rating="set" data-fls-rating-value="5"></div>
+								<div class="testimonials__content">
+									<h4 class="testimonials__title">“Affordable and reliable for small business”</h4>
+									<div class="testimonials__text">
+										<p>At Neero, we are committed to pushing the boundaries.</p>
+									</div>
+								</div>
+								<div class="testimonials__user">
+									<picture>
+										<img class="testimonials__user-img" alt="Avatar" src="./assets/img/testimonials/avatar.webp">
+									</picture>
+									<div class="testimonials__user-info">
+										<div class="testimonials__user-name">Tyson</div>
+										<div class="testimonials__user-profession">Designer</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- faq -->
+				<section class="page__faq faq">
+					<div class="faq__container">
+						<div data-fls-headericon="" class="faq__header headericon">
+							<svg class="icon icon--help-circle">
+								<use xlink:href="./assets/img/spritemap.svg#sprite-help-circle"></use>
+							</svg>
+							<h3 class="headericon__title">FAQs</h3>
+						</div>
+						<div data-fls-spollers="" class="faq__items">
+							<details data-fls-faqitem="" data-fls-spollers-open="" class="faq__item">
+								<summary class="faq__caption">What services does Xanix provide?</summary>
+								<div class="faq__body">
+									<p>
+										Xanix offers a range of digital services including web design, development, digital marketing, branding, and more.
+									</p>
+								</div>
+							</details>
+							<details data-fls-faqitem="" class="faq__item">
+								<summary class="faq__caption">How can I request a quote for my project?</summary>
+								<div class="faq__body">
+									<p>
+										Xanix offers a range of digital services including web design, development, digital marketing, branding, and more.
+									</p>
+								</div>
+							</details>
+							<details data-fls-faqitem="" class="faq__item">
+								<summary class="faq__caption">What industries does Xanix work with?</summary>
+								<div class="faq__body">
+									<p>
+										Xanix offers a range of digital services including web design, development, digital marketing, branding, and more.
+									</p>
+								</div>
+							</details>
+							<details data-fls-faqitem="" class="faq__item">
+								<summary class="faq__caption">How long does it take to complete a project with Xanix?</summary>
+								<div class="faq__body">
+									<p>
+										Xanix offers a range of digital services including web design, development, digital marketing, branding, and more.
+									</p>
+								</div>
+							</details>
+							<details data-fls-faqitem="" class="faq__item">
+								<summary class="faq__caption">Does Xanix provide ongoing support after the project is completed?</summary>
+								<div class="faq__body">
+									<p>
+										Xanix offers a range of digital services including web design, development, digital marketing, branding, and more.
+									</p>
+								</div>
+							</details>
+						</div>
+					</div>
+				</section>
+				<!-- cta -->
+				<section class="page__cta cta">
+					<div class="cta__container">
+						<div class="cta__inner">
+							<div class="cta__header">
+								<div class="cta__status cta__status--online">
+									<span class="cta__status-dot"></span>
+									<span class="cta__status-label">Available for new project</span>
+								</div>
+								<h2 class="cta__title">Interested in working together?</h2>
+								<div class="cta__text">
+									<p>
+										Yes, indeed. Improving underperforming sales teams is our specialty. We can help them elevate their
+							performance levels
+							and eliminate inconsistencies, resulting in increased revenue for your business.
+									</p>
+								</div>
+							</div>
+							<div class="cta__actions">
+								<a href="#" data-fls-button="" class="cta__button-arrow button button--arrow">
+									<span>Schedule a call</span>
+									<span data-fls-arrow="" class="icon icon--arrow icon--arrow-animated"></span>
+								</a>
+								<a href="#" data-fls-button="" class="cta__button-arrow button button--arrow button--arrow-lite">
+									<span>Book a demo</span>
+									<span data-fls-arrow="" class="icon icon--arrow"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<figure class="footer__bg-ellipse">
+					<img src="./assets/img/bg/ellipse.svg" alt="Decor">
+				</figure>
+				<div class="footer__container">
+					<div class="footer__body body-footer" id="contact">
+						<div class="body-footer__content">
+							<div data-fls-spollers="515" class="body-footer__menus">
+								<details class="body-footer__menu">
+									<summary class="body-footer__summary">Sitemap</summary>
+									<ul class="body-footer__list">
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">About</a>
+										</li>
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">Careers</a>
+										</li>
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">Blogs</a>
+										</li>
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">News</a>
+										</li>
+									</ul>
+								</details>
+								<details class="body-footer__menu">
+									<summary class="body-footer__summary">Resources</summary>
+									<ul class="body-footer__list">
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">Styleguide</a>
+										</li>
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">Changelog</a>
+										</li>
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">Licences</a>
+										</li>
+										<li class="body-footer__item">
+											<a href="#" class="body-footer__link">404</a>
+										</li>
+									</ul>
+								</details>
+							</div>
+							<div class="body-footer__contact contact">
+								<h5 class="contact__title">Contact</h5>
+								<address class="contact__address">
+									<a href="https://maps.google.com/?q=789+Market+Street,+Floor+3,+Los+Angeles,+CA" target="_blank" rel="noopener noreferrer" class="contact__address-link">789 Market Street, Floor 3,
+							Los Angeles, CA</a>
+									<a href="tel:+10911160202" class="contact__address-link">+1 (0) 911 16 02 02</a>
+									<a href="mailto:info@xanix.com" class="contact__address-link">info@xanix.com</a>
+								</address>
+							</div>
+							<div class="body-footer__social social">
+								<div class="social__wrapper">
+									<h5 class="social__title">Socials</h5>
+									<ul class="social__list">
+										<li class="social__item">
+											<a href="#" target="_blank" rel="noopener noreferrer" class="social__link">
+												<svg class="icon icon--instagram">
+													<use xlink:href="./assets/img/spritemap.svg#sprite-instagram"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="#" target="_blank" rel="noopener noreferrer" class="social__link">
+												<svg class="icon icon--youtube">
+													<use xlink:href="./assets/img/spritemap.svg#sprite-youtube"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="#" target="_blank" rel="noopener noreferrer" class="social__link">
+												<svg class="icon icon--twitter-x">
+													<use xlink:href="./assets/img/spritemap.svg#sprite-twitter-x"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="#" target="_blank" rel="noopener noreferrer" class="social__link">
+												<svg class="icon icon--facebook">
+													<use xlink:href="./assets/img/spritemap.svg#sprite-facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social__item">
+											<a href="#" target="_blank" rel="noopener noreferrer" class="social__link">
+												<svg class="icon icon--linkedin">
+													<use xlink:href="./assets/img/spritemap.svg#sprite-linkedin"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="body-footer__logo logo-footer" aria-label="XANIX logo">
+							<div class="logo-footer__letters">
+								<svg class="logo-footer__letter">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-x"></use>
+								</svg>
+								<svg class="logo-footer__letter">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-a"></use>
+								</svg>
+								<svg class="logo-footer__letter">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-n"></use>
+								</svg>
+								<div class="logo-footer__wrapper-i">
+									<svg class="logo-footer__letter">
+										<use xlink:href="./assets/img/spritemap.svg#sprite-i"></use>
+									</svg>
+								</div>
+								<svg class="logo-footer__letter">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-x"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__copy">© 2024 The XANIX. All rights reserved.</div>
+						<div class="bottom-footer__legal">
+							<a href="#" class="bottom-footer__link">Privacy Policy</a>
+							<span class="bottom-footer__separator">&bull;</span>
+							<a href="#" class="bottom-footer__link">Terms & Conditions</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
